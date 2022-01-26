@@ -4,7 +4,7 @@ const app = express();
 
 const ladas = require("./ladas-internacionales.json");
 
-var port = process.env.port || 8080;
+// var port = process.env.port || 8080;
 
 app.get("/api/test", (req, res) =>{
 
@@ -22,4 +22,4 @@ app.get("/api/ladas", (req, res) =>{
 //     res.json(ladas[].name);
 // });
 
-app.listen(port);
+// app.listen(port);
