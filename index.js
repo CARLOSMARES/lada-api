@@ -2,7 +2,11 @@ const express = require("express");
 
 const app = express();
 
+const cors = require("cors");
+
 const ladas = require("./ladas-internacionales.json");
+
+app.use("cors");
 
 var port = process.env.port || 8080;
 
